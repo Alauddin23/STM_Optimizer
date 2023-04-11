@@ -1,0 +1,876 @@
+/* CSS preset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  background-color: #7D6E83;
+  font-family: 'Cookie', cursive;
+}
+
+.title {
+  position: relative;
+  width: 420px;
+  bottom: 775px;
+  left: 120px;
+  font-size: 8em;
+}
+
+.UpperContainer {
+  background-color: #DFD3C3;
+  width: 1400px;
+  height: 987px;
+}
+
+.TopContainerInfo {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #D0B8A8;
+  position: relative;
+  bottom: 860px;
+  left: 100px;
+  width: 500px;
+  height: 675px;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.BeneathContainerInfo {
+  background-color: #674747;
+  position: relative;
+  bottom: 160px;
+  left: 185px;
+  width: 450px;
+  height: 675px;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.inputElements {
+  font-family: 'Noto Serif', serif;
+  font-weight: bolder;
+  font-size: 3em;
+  border: 2px;
+  border-style: solid;
+  padding-left: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 12px;
+}
+
+.labels {
+  font-family: 'Noto Serif', serif;
+  font-size: 3em;
+  font-weight: bolder;
+}
+
+.arrivalDateLabel {
+  position: relative;
+}
+
+.arrivalDateInput {
+  position: relative;
+}
+
+.DepartureDateLabel {
+  position: relative;
+}
+
+.DepartureDateInput {
+  position: relative;
+}
+
+.AgeLabel {
+  position: relative;
+  top: 30px;
+}
+
+.AgeInput {
+  position: relative;
+  width: 380px;
+  top: 30px;
+}
+
+.StudentLabel {
+  position: relative;
+  top: 40px;
+}
+
+.StudentInput {
+  position: relative;
+  width: 120px;
+  height: 30px;
+  top: 40px;
+}
+
+.SubmitButton {
+  background-color: #8f9991;
+  position: relative;
+  top: 140px;
+  left: 10px;
+  font-family: 'Noto Serif', serif;
+  font-weight: bolder;
+  font-size: 1.125em;
+  border: 2px;
+  border-style: solid;
+  border-radius: 12px;
+  width: 150px;
+  height: 70px;
+}
+
+.container {
+  position: relative;
+}
+
+.content {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  top: 300px;
+  left: 110px
+}
+
+.track {
+  position: absolute;
+  width: 400px;
+  height: 5px;
+  background-color: #333;
+  top: 300px
+}
+
+.track:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  background-color: #333;
+  top: 4px;
+  box-shadow: 20px 0 #333, -20px 0 #333, -40px 0 #333, -60px 0 #333, -80px 0 #333, 40px 0 #333, 60px 0 #333, 80px 0 #333, 100px 0 #333, 120px 0 #333, 140px 0 #333, 160px 0 #333, 180px 0 #333, 200px 0 #333, 220px 0 #333, 240px 0 #333, 260px 0 #333, 280px 0 #333, 300px 0 #333, 320px 0 #333, 340px 0 #333, 360px 0 #333, 380px 0 #333, 400px 0 #333, 420px 0 #333, 440px 0 #333, -100px 0 #333, -120px 0 #333, -140px 0 #333, 460px 0 #333, 480px 0 #333;
+  animation: move 1s linear infinite reverse;
+}
+
+@keyframes move {
+  from {
+    left: -100px;
+  }
+
+  to {
+    left: 100px;
+  }
+}
+
+.train {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  border: 5px solid #333;
+  background-color: #9e2a2b;
+  border-radius: 0 10px 0 0;
+  top: 230px;
+  left: 285px;
+  animation: scale 1s linear infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(0.99);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.train:before {
+  content: "";
+  position: absolute;
+  border: 5px solid #333;
+  background-color: #335c67;
+  width: 35px;
+  height: 60px;
+  left: -45px;
+  top: -35px;
+}
+
+.train:after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 5px;
+  border-radius: 10px;
+  border: 5px solid #333;
+  background-color: #fff3b0;
+  top: 30px;
+  left: -50px;
+}
+
+.front {
+  position: absolute;
+  border: 5px solid #333;
+  background-color: #aed9e0;
+  box-shadow: inset 2px -5px rgba(255, 255, 255, 0.3);
+  width: 20px;
+  height: 30px;
+  left: -37.5px;
+  top: -20px;
+}
+
+.front:before {
+  content: "";
+  position: absolute;
+  background-color: #333;
+  width: 15px;
+  height: 5px;
+  border-radius: 10px;
+  top: 25px;
+  left: 70px;
+  box-shadow: 0px 10px #333, -50px -45px #333, -86px -45px #333, -22px -41px #333, -11px -41px #333;
+}
+
+.front:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 20px;
+  border: 5px solid #333;
+  left: 50px;
+  top: -16px;
+  background-color: #adb5bd;
+}
+
+.wheels {
+  position: absolute;
+  z-index: 1;
+}
+
+.smallOne, .smallTwo, .smallThree, .smallFour, .smallFive, .smallSix {
+  position: absolute;
+  border: 5px solid #333;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  top: 40px;
+  background-color: #e09f3e;
+  box-shadow: inset 2px 2px white;
+  z-index: 2;
+}
+
+.smallOne {
+  left: 30px;
+  animation: spin .5s infinite linear;
+}
+
+.smallTwo {
+  left: 0;
+  animation: spin .5s infinite linear;
+}
+
+.smallThree {
+  left: -225px;
+  animation: spin .5s infinite linear;
+}
+
+.smallFour {
+  left: -190px;
+  animation: spin .5s infinite linear;
+}
+
+.smallFive {
+  left: -130px;
+  animation: spin .5s infinite linear;
+}
+
+.smallSix {
+  left: -95px;
+  animation: spin .5s infinite linear;
+}
+
+.big {
+  position: absolute;
+  border: 5px solid #333;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: #e09f3e;
+  box-shadow: inset 2px 2px white;
+  top: 30px;
+  left: -40px;
+  animation: spin .5s infinite linear;
+}
+
+.cord {
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  background-color: #333;
+  top: 35px;
+  left: -59px;
+  z-index: 3;
+}
+
+.cord:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 70px;
+  background-color: #333;
+  top: 15px;
+  left: 35px;
+}
+
+.cord:after {
+  content: "";
+  position: absolute;
+  background-color: #333;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  top: 5px;
+  left: 29px;
+}
+
+.coach {
+  position: absolute;
+  width: 80px;
+  height: 60px;
+  border: 5px solid #333;
+  background-color: #9e2a2b;
+  left: -145px;
+  top: -20px;
+}
+
+.coach:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  background-color: #333;
+  top: 50px;
+  left: -15px;
+}
+
+.coach:after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 60px;
+  border: 5px solid #333;
+  background-color: #335c67;
+  top: -5px;
+  left: -100px;
+}
+
+.coachTwo {
+  position: absolute;
+  border: 5px solid #333;
+  background-color: #aed9e0;
+  box-shadow: inset 2px -5px rgba(255, 255, 255, 0.3);
+  width: 15px;
+  height: 25px;
+  left: -225px;
+  top: -5px;
+}
+
+.coachTwo:before, .coachTwo:after {
+  content: "";
+  position: absolute;
+  border: 5px solid #333;
+  background-color: #aed9e0;
+  box-shadow: inset 2px -5px rgba(255, 255, 255, 0.3);
+  width: 15px;
+  height: 25px;
+  top: -5px;
+}
+
+.coachTwo:before {
+  left: 30px;
+}
+
+.coachTwo:after {
+  left: 90px;
+}
+
+.windows {
+  position: absolute;
+  border: 5px solid #333;
+  background-color: #aed9e0;
+  box-shadow: inset 2px -5px rgba(255, 255, 255, 0.3);
+  width: 15px;
+  height: 25px;
+  left: -95px;
+  top: -5px;
+  z-index: 6;
+}
+
+.windows:before {
+  content: "";
+  position: absolute;
+  background-color: #333;
+  height: 5px;
+  width: 95px;
+  border-radius: 10px;
+  top: -20px;
+  left: -153px;
+  box-shadow: 95px 0px #333;
+}
+
+.windows:after {
+  content: "";
+  position: absolute;
+  background-color: #333;
+  height: 5px;
+  width: 40px;
+  top: 51px;
+  left: -125px;
+  box-shadow: 95px 0 #333;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#up {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0;
+  top: -30px;
+  left: 25.5px;
+  z-index: -1;
+}
+
+.steam {
+  animation: up 2.5s ease-out infinite;
+}
+
+.steam2 {
+  animation: up 1.7s ease-out infinite 1s;
+}
+
+.steam2:before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 20px;
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.5);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-110px) translateX(-80px) scale(1.5);
+    opacity: 0.2;
+  }
+}
+
+@media screen and (min-width:575px) {
+  .title {
+    position: relative;
+    bottom: 450px;
+    left: 50px;
+    font-size: 4em;
+  }
+
+  .UpperContainer {
+    background-color: #DFD3C3;
+    width: 1800px;
+    height: 700px;
+  }
+
+  .TopContainerInfo {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #D0B8A8;
+    position: relative;
+    bottom: 535px;
+    left:400px;
+    width: 650px;
+    height: 325px;
+    border-radius: 12px;
+    padding: 5px;
+  }
+
+  .BeneathContainerInfo {
+    background-color: #674747;
+    position: relative;
+    bottom: 180px;
+    left: 450px;
+    width: 650px;
+    height: 325px;
+    border-radius: 12px;
+    padding: 5px;
+  }
+
+  .container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    left:40px;
+    bottom: 325px;
+  }
+
+  .inputElements {
+    font-family: 'Noto Serif', serif;
+    font-weight: bolder;
+    font-size: 1.125em;
+    border: 2px;
+    border-style: solid;
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 12px;
+  }
+
+  .labels {
+    font-family: 'Noto Serif', serif;
+    font-size: 1.125em;
+    font-weight: bolder;
+  }
+
+  .arrivalDateLabel {
+    position: relative;
+    top: 25px;
+    left: 10px;
+  }
+
+  .arrivalDateInput {
+    position: relative;
+    top: 25px;
+    left: 10px;
+  }
+
+  .DepartureDateLabel {
+    position: relative;
+    top: 25px;
+    left: 22px;
+  }
+
+  .DepartureDateInput {
+    position: relative;
+    left: 25px;
+    top: 25px;
+  }
+
+  .AgeLabel {
+    position: relative;
+    left: 10px;
+    top: 50px;
+  }
+
+  .AgeInput {
+    position: relative;
+    left: 10px;
+    top: 50px;
+    width: 165px
+  }
+
+  .StudentLabel {
+    position: absolute;
+    top: 170px;
+    left: 10px;
+  }
+
+  .StudentInput {
+    position: absolute;
+    top: 177px;
+    left: 50px;
+    height: 15px;
+  }
+
+  .SubmitButton {
+    background-color: #8f9991;
+    position: relative;
+    top: 180px;
+    left: 290px;
+    font-family: 'Noto Serif', serif;
+    font-weight: bolder;
+    font-size: 1.125em;
+    border: 2px;
+    border-style: solid;
+    border-radius: 12px;
+    width: 100px;
+    height: 40px
+  }
+}
+
+@media screen and (min-width:800px) {
+  .title {
+    position: relative;
+    bottom: 450px;
+    left: 50px;
+    font-size: 4em;
+  }
+
+  .UpperContainer {
+    background-color: #DFD3C3;
+    width: 1800px;
+    height: 500px;
+  }
+
+  .TopContainerInfo {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #D0B8A8;
+    position: relative;
+    bottom: 535px;
+    left: 140px;
+    width: 650px;
+    height: 325px;
+    border-radius: 12px;
+    padding: 5px;
+  }
+
+  .BeneathContainerInfo {
+    background-color: #674747;
+    position: relative;
+    bottom: 180px;
+    left: 175px;
+    width: 650px;
+    height: 325px;
+    border-radius: 12px;
+    padding: 5px;
+  }
+
+  .container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    right: 500px;
+    bottom: 425px;
+  }
+
+  .inputElements {
+    font-family: 'Noto Serif', serif;
+    font-weight: bolder;
+    font-size: 1.125em;
+    border: 2px;
+    border-style: solid;
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 12px;
+  }
+
+  .labels {
+    font-family: 'Noto Serif', serif;
+    font-size: 1.125em;
+    font-weight: bolder;
+  }
+
+  .arrivalDateLabel {
+    position: relative;
+    top: 25px;
+    left: 10px;
+  }
+
+  .arrivalDateInput {
+    position: relative;
+    top: 25px;
+    left: 10px;
+  }
+
+  .DepartureDateLabel {
+    position: relative;
+    top: 25px;
+    left: 22px;
+  }
+
+  .DepartureDateInput {
+    position: relative;
+    left: 25px;
+    top: 25px;
+  }
+
+  .AgeLabel {
+    position: relative;
+    left: 10px;
+    top: 50px;
+  }
+
+  .AgeInput {
+    position: relative;
+    left: 10px;
+    top: 50px;
+    width: 165px
+  }
+
+  .StudentLabel {
+    position: absolute;
+    top: 170px;
+    left: 10px;
+  }
+
+  .StudentInput {
+    position: absolute;
+    top: 177px;
+    left: 50px;
+    height: 15px;
+  }
+
+  .SubmitButton {
+    background-color: #8f9991;
+    position: relative;
+    top: 180px;
+    left: 290px;
+    font-family: 'Noto Serif', serif;
+    font-weight: bolder;
+    font-size: 1.125em;
+    border: 2px;
+    border-style: solid;
+    border-radius: 12px;
+    width: 100px;
+    height: 40px
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .title {
+    position: relative;
+    bottom: 275px;
+    left: 50px;
+    font-size: 4em;
+  }
+
+  .UpperContainer {
+    background-color: #DFD3C3;
+    width: 1800px;
+    height: 387px;
+  }
+
+  .TopContainerInfo {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #D0B8A8;
+    position: relative;
+    bottom: 410px;
+    left: 380px;
+    width: 650px;
+    height: 275px;
+    border-radius: 12px;
+    padding: 5px;
+  }
+
+  .BeneathContainerInfo {
+    background-color: #674747;
+    position: relative;
+    bottom: 105px;
+    left: 395px;
+    width: 650px;
+    height: 280px;
+    border-radius: 12px;
+    padding: 5px;
+  }
+
+  .container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    
+    bottom: 425px;
+  }
+
+  .inputElements {
+    font-family: 'Noto Serif', serif;
+    font-weight: bolder;
+    font-size: 1.125em;
+    border: 2px;
+    border-style: solid;
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 12px;
+  }
+
+  .labels {
+    font-family: 'Noto Serif', serif;
+    font-size: 1.125em;
+    font-weight: bolder;
+  }
+
+  .arrivalDateLabel {
+    position: relative;
+    top: 25px;
+    left: 10px;
+  }
+
+  .arrivalDateInput {
+    position: relative;
+    top: 25px;
+    left: 10px;
+  }
+
+  .DepartureDateLabel {
+    position: relative;
+    top: 25px;
+    left: 22px;
+  }
+
+  .DepartureDateInput {
+    position: relative;
+    left: 25px;
+    top: 25px;
+  }
+
+  .AgeLabel {
+    position: relative;
+    left: 10px;
+    top: 50px;
+  }
+
+  .AgeInput {
+    position: relative;
+    left: 10px;
+    top: 50px;
+    width: 165px
+  }
+
+  .StudentLabel {
+    position: absolute;
+    top: 180px;
+    left: 10px;
+  }
+
+  .StudentInput {
+    position: absolute;
+    top: 187px;
+    left: 50px;
+    height: 15px;
+  }
+
+  .SubmitButton {
+    background-color: #8f9991;
+    position: relative;
+    top: 145px;
+    left: 290px;
+    font-family: 'Noto Serif', serif;
+    font-weight: bolder;
+    font-size: 1.125em;
+    border: 2px;
+    border-style: solid;
+    border-radius: 12px;
+    width: 100px;
+    height: 40px
+  }
+}
